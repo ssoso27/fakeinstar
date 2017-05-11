@@ -6,6 +6,7 @@
 
 <% @posts.each do |p| %>
     <div class="well">
+        <img height="30" width="30" src="<=% p.photo.url %>">
         제목 : <%= p.title %><br>
     </div>
 <% end %>
