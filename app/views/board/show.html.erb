@@ -1,0 +1,11 @@
+<h1>Board#show</h1>
+<p>Find me in app/views/board/show.html.erb</p>
+<div class="well">
+    제목 : <%= @post.title %> <br>
+    내용 : <%= @post.content %>
+</div>
+
+<form action="/board/create_reply">
+    <input type="text" name="reply" placeholder="댓글을 입력해주세요.">
+    <input type="submit" value="댓글입력">
+</form>
